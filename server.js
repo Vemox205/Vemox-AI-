@@ -2,10 +2,9 @@
 const express = require('express');
 const { GoogleGenAI } = require('@google/genai');
 
-\`const ai=new GoogleGenAI({apikey:process.env Gemini_API_KEY})
-const ai = new GoogleGenAI({ `process.env.GEMINI_API_KEY});
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 const PORT = process.env.PORT || 3000;
-
+`const app = express();`
 app.use(express.json());
 
 app.post('/generate', async (req, res) => {
